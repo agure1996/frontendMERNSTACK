@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <div className='home'>
             <div className="books">
-                {books && books.map((book) =>(
+                {books && books.map(book =>(
                     <BookDetails key={book._id}
                     book = {book}
                      />

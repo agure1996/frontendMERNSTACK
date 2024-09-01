@@ -55,7 +55,7 @@ const BookForm = () => {
     <form className="create" onSubmit={handleSubmit}>
         <h3>Add a new Book </h3>
         
-        <label>Book Title: </label>
+        <h2>Book Title: </h2>
         <input 
         type="text"
         onChange={(e) => setTitle(e.target.value)}
@@ -63,7 +63,7 @@ const BookForm = () => {
             className={emptyFields.includes('title')? 'error' : ''}
         />
         
-        <label>Book Author: </label>
+        <h2>Book Author: </h2>
         <input 
         type="text"
         onChange={(e) => setAuthor(e.target.value)}
@@ -71,7 +71,7 @@ const BookForm = () => {
             className={emptyFields.includes('author')? 'error' : ''}
         />
 
-        <label>How Many Pages: </label>
+        <h2>How Many Pages: </h2>
         <input 
         type="number"
         onChange={(e) => setPages(e.target.value)}
@@ -79,7 +79,7 @@ const BookForm = () => {
             className={emptyFields.includes('pages')? 'error' : ''}
         />
 
-        <label>Author Contact: </label>
+        <h2>Author Contact: </h2>
         <input 
         type="number"
         onChange={(e) => setContact(e.target.value)}
